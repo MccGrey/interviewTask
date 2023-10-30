@@ -5,5 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <label for="">Impressions</label>
+    <input
+      id="im"
+      type="number"
+      min="0"
+      onKeypress="return(event.charCode !=8 && event.charcode == 0 ||(event.charCode >= 48 && event.charCode <=57))"
+    /><br /><br />
+    <label for="">Clicks</label>
+    <input
+      id="cl"
+      type="number"
+      min="0"
+      onKeypress="return(event.charCode !=8 && event.charcode == 0 ||(event.charCode >= 48 && event.charCode <=57))"
+    /><br /><br />
+    <label for="">Conversion</label>
+    <input
+      id="co"
+      type="number"
+      min="0"
+      onKeypress="return(event.charCode !=8 && event.charcode == 0 ||(event.charCode >= 48 && event.charCode <=57))"
+    /><br /><br />
+    <label for="">Spend</label>
+    <input
+      id="sp"
+      type="number"
+      min="0"
+      onKeypress="return(event.charCode !=8 && event.charcode == 0 ||(event.charCode >= 48 && event.charCode <=57))"
+    /><br /><br />
+    <label for="">Click Through Rate</label>
+    <input type="text" id="ctr" /><br /><br />
+    <label for="">Conversion Rate</label>
+    <input type="text" id="cr" /><br /><br />
+    <label for="">Cost Per Click</label>
+    <input type="text" id="cpc" /><br /><br />
+    <label for="">Cost per Conversion</label>
+    <input type="text" id="cps" /><br /><br />
+    <button onclick="calc()">Calculate</button>
+  </body>
 </html>
