@@ -8,15 +8,18 @@
 h2 {
   text-align: center;
 }
+
 label {
   width: 170px;
   display: inline-block;
   margin: 3px;
 }
+
 h2,
 label {
   font-family: "Courier New", Courier, monospace;
 }
+
 h2 {
   font-size: 2rem;
 }
@@ -24,7 +27,7 @@ h2 {
 .calc {
   margin-left: 8rem;
   margin-top: 2rem;
-  background-color: #b60e0e; /* Green */
+  background-color: #b60e0e;
   border: none;
   border-radius: 5px;
   color: white;
@@ -35,6 +38,7 @@ h2 {
   font-size: 16px;
   transition: 400ms;
 }
+
 .calc:hover {
   background-color: #ffffff; /* Green */
   color: rgb(0, 0, 0);
@@ -45,4 +49,14 @@ input {
   padding: 4px;
   margin: 3px;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    margin-left: 5.5rem;
+  }
+
+  .calc {
+    margin-left: 1rem;
+  }
 }
